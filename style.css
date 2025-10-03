@@ -162,26 +162,47 @@ header.pf-scrolled {
 	margin-bottom: 2rem;
 	color: var(--text-secondary);
 }
-.cta-btn {
-	display: inline-block;
-	background: linear-gradient(135deg, var(--primary), var(--secondary));
-	color: var(--surface);
-	padding: 1rem 2.5rem;
-	border-radius: 32px;
-	font-weight: 700;
-	font-size: 1.1rem;
-	text-decoration: none;
-	box-shadow: var(--shadow-soft);
-	transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
-	border: none;
-	cursor: pointer;
+/* Hero Section Wrapper */
+.hero-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 1rem; 
+    text-align: left; 
 }
-.cta-btn:hover,
-.cta-btn:focus-visible {
-	background: linear-gradient(135deg, var(--secondary), var(--primary));
-	transform: translateY(-2px) scale(1.04);
-	box-shadow: var(--shadow-lift);
-	outline: none;
+
+/* Resume Button */
+.cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--surface);
+    padding: 0.9rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+}
+.cta-btn:hover {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lift);
+}
+
+/* Hero Social Icons */
+.hero-socials {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 1rem;
+}
+.hero-socials a img {
+    width: 32px;
+    height: 32px;
+    transition: transform var(--transition);
+}
+.hero-socials a:hover img {
+    transform: scale(1.2);
 }
 
 /* About Section */
@@ -254,7 +275,7 @@ header.pf-scrolled {
 	background: var(--surface);
 	border-radius: var(--radius);
 	box-shadow: var(--shadow-soft);
-	padding: 2rem 1.5rem 1.5rem 1.5rem;
+	padding: 1.5rem;
 	text-align: left;
 	transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 	position: relative;
@@ -271,38 +292,26 @@ header.pf-scrolled {
 }
 .project-card img {
 	width: 100%;
+	height: 180px;
+	object-fit: cover;
 	border-radius: 8px;
 	margin-bottom: 1.2rem;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-.project-title {
+.project-card h3 {
 	font-size: 1.3rem;
 	font-weight: 700;
 	color: var(--primary);
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.6rem;
 }
-.project-desc {
+.project-card p {
 	color: var(--text-secondary);
 	font-size: 1rem;
 	margin-bottom: 1rem;
-}
-.project-tags {
-	display: flex;
-	gap: 0.5rem;
-	flex-wrap: wrap;
-	margin-bottom: 1rem;
-}
-.project-tag {
-	background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(14, 165, 233, 0.08));
-	color: var(--secondary);
-	padding: 0.3rem 1rem;
-	border-radius: 16px;
-	font-size: 0.9rem;
-	font-weight: 600;
-	border: 1px solid rgba(59, 130, 246, 0.15);
+	flex-grow: 1; 
 }
 .project-btn {
-	align-self: flex-start;
+	align-self: flex-start;  
 	background: linear-gradient(90deg, var(--primary), var(--secondary));
 	color: var(--surface);
 	padding: 0.7rem 2rem;
@@ -314,6 +323,7 @@ header.pf-scrolled {
 	box-shadow: var(--shadow-soft);
 	border: none;
 	cursor: pointer;
+	margin-top: auto;     
 }
 .project-btn:hover,
 .project-btn:focus-visible {
@@ -425,6 +435,7 @@ header.pf-scrolled {
 	margin-top: 1.2rem;
 	display: flex;
 	gap: 1.2rem;
+	margin-right: 0; /* Reset margin for mobile */
 }
 .social-links a img {
 	transition: transform var(--transition);
@@ -449,6 +460,7 @@ footer {
 	.contact-container {
 		flex-direction: column;
 		align-items: center;
+		text-align: center; /* Center text */
 	}
 	.navbar {
 		flex-direction: column;
@@ -472,9 +484,13 @@ footer {
 		flex-direction: column;
 		gap: 2rem;
 		text-align: center;
+		align-items: center;
 	}
 	.projects-grid {
 		grid-template-columns: 1fr;
+	}
+	.hero-socials {
+		justify-content: center; /* Center icons */
 	}
 }
 @media (max-width: 600px) {
@@ -495,6 +511,8 @@ footer {
 		z-index: 99;
 	}
 }
+
+/* Reduce motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
 	*, *:before, *:after {
 		transition: none !important;
