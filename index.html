@@ -11,10 +11,16 @@
 	<!-- Header & Navigation -->
 	<header>
 		<nav class="navbar">
-			<div class="logo">Portfolio</div>
-			<ul class="nav-links">
+			<div class="logo">Namala Thanusha</div>
+			<button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-links" id="nav-list">
 				<li><a href="#hero">Home</a></li>
 				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -25,96 +31,226 @@
 	<section id="hero" class="hero">
 		<div class="hero-content">
 			<h1>Namala Thanusha</h1>
-			<h2>B.Tech CSIT Student | Aspiring Web Developer</h2>
-			<p>Passionate about building modern, responsive, and functional websites.</p>
+			<h2>Full Stack Developer | CSIT Student</h2>
+			<p>Passionate about building scalable web applications, responsive user interfaces, and user-focused digital experiences using modern technologies.</p>
+
+			<div class="hero-actions">
+				<a href="#projects" class="cta-btn">View Projects</a>
+				<a href="https://drive.google.com/file/d/1_B43dUXEx_bB8-dUYbZDElHEDCgqEaV6/view?usp=drivesdk" target="_blank" class="cta-btn cta-btn-secondary">Resume</a>
+				<a href="https://github.com/NamalaThanusha" target="_blank" class="cta-btn cta-btn-secondary">GitHub</a>
 			
-			<!-- Resume Button -->
-			<a href="https://drive.google.com/file/d/1SNaUqHHgLES9wj80HZnohWZ_Rj3mbo-4/view?usp=drivesdk" target="_blank" class="cta-btn">View Resume</a>
-			
-			<!-- Social Icons -->
-			<div class="social-links" style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center;">
-				<a href="https://www.instagram.com/thanusha_namala?igsh=ZHY3bDA2ZXZ5MTVq" aria-label="Instagram" target="_blank">
-					<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="36">
-				</a>
+			</div>
+
+			<div class="social-links hero-social-links">
 				<a href="https://www.linkedin.com/in/thanusha-namala-3a8795352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" target="_blank">
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="36">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
 				</a>
 				<a href="https://github.com/NamalaThanusha" aria-label="GitHub" target="_blank">
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="36">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
 				</a>
 			</div>
 		</div>
 	</section>
 
 	<!-- About Me Section -->
-<section id="about" class="about">
-    <div class="about-container">
-        <div class="about-image">
-            <img src="img/pic2.jpeg" alt="Profile Photo">
-        </div>
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>Hello! I’m <b>Namala Thanusha</b>, a second-year <b>B.Tech Computer Science and Information Technology</b> student with a strong interest in <b>web development and software design</b>.</p>
-            <p>I enjoy <b>building clean, user-friendly digital experiences</b> and exploring innovative ways technology can address real-world challenges. My current focus is on strengthening my full-stack development skills using <b>HTML, CSS, JavaScript, PHP, MySQL, and Firebase</b>.</p>
-            <p>Looking ahead, my goal is to grow as a versatile <b>software engineer</b> and contribute to impactful projects that combine <b>creativity, functionality, and problem-solving</b>.</p>
-        </div>
-    </div>
+<section id="about" class="about section-shell">
+	<div class="section-heading">
+		<span class="section-kicker">About</span>
+		<h2>Focused on building polished web products</h2>
+	</div>
+	<div class="about-container">
+		<div class="about-image">
+			<img src="img/pp.jpeg" alt="Profile Photo">
+		</div>
+		<div class="about-content">
+			<p>I’m a B.Tech CSIT student passionate about full stack development and building scalable, user-focused web applications.</p>
+			<p>I enjoy solving real-world problems through clean UI design, efficient backend systems, and responsive web experiences.</p>
+			<p>Currently working with React, Node.js, Express.js, PHP, MySQL, MongoDB, Prisma, PostgreSQL, and Firebase while continuously improving my software engineering and problem-solving skills.</p>
+		</div>
+	</div>
 </section>
+
+	<!-- Skills Section -->
+	<section id="skills" class="skills-section section-shell">
+		<div class="section-heading">
+			<span class="section-kicker">Skills</span>
+			<h2>Technical toolkit</h2>
+		</div>
+		<div class="skills-grid">
+			<div class="skill-card">
+				<h3>Frontend</h3>
+				<div class="skills">
+					<span class="skill">React Js</span>
+					<span class="skill">HTML</span>
+					<span class="skill">CSS</span>
+					<span class="skill">Tailwind CSS</span>
+					<span class="skill">JavaScript</span>
+				</div>
+			</div>
+			<div class="skill-card">
+				<h3>Backend</h3>
+				<div class="skills">
+					<span class="skill">Node Js</span>
+					<span class="skill">Express Js</span>
+					<span class="skill">PHP</span>
+					<span class="skill">MongoDB</span>
+					<span class="skill">MySQL</span>
+				</div>
+			</div>
+			<div class="skill-card">
+				<h3>Programming Languages</h3>
+				<div class="skills">
+					<span class="skill">C</span>
+					<span class="skill">Python</span>
+					<span class="skill">Java</span>
+					<span class="skill">JavaScript</span>
+				</div>
+			</div>
+			<div class="skill-card">
+				<h3>Others</h3>
+				<div class="skills">
+					<span class="skill">Git</span>
+					<span class="skill">GitHub</span>
+					<span class="skill">Postman</span>
+					<span class="skill">Prisma</span>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<!-- Projects Section -->
 	<section id="projects" class="projects">
-		<h2>Projects</h2>
+		<div class="section-heading">
+			<span class="section-kicker">Projects</span>
+			<h2>Selected work</h2>
+		</div>
 		<div class="projects-grid">
 			<div class="project-card">
-				<img src="img/p1.jpg" alt="AI Website">
-				<h3>AI Information Website</h3>
-				<p>A simple AI-focused website redesigned from a black & white theme to a colorful design. Includes structured AI info pages and improved navigation.</p>
-				<p><b>Tech Used:</b> HTML, CSS, JavaScript</p>
-				<a href="https://github.com/NamalaThanusha/AI-Website" target="_blank" class="project-btn">GitHub Link</a>
+				<img src="img/reva.jpeg" alt="REVA AI">
+				<div class="project-card-content">
+					<h3>REVA AI</h3>
+					<p>AI-powered complaint management system with multilingual voice support and intelligent complaint categorization.</p>
+					<div class="project-tags">
+						<span class="project-tag">React</span>
+						<span class="project-tag">Express.js</span>
+						<span class="project-tag">Prisma</span>
+						<span class="project-tag">PostgreSQL</span>
+					</div>
+					<a href="https://github.com/mohith1976/REVA-AI" target="_blank" class="project-btn">View Repository →</a>
+				</div>
 			</div>
 
 			<div class="project-card">
-				<img src="img/p2.jpg" alt="Sports Equipment">
-				<h3>Sports Equipment Management System</h3>
-				<p>A web portal to book and manage sports equipment. Improves transparency, prevents misuse, and simplifies record management.</p>
-				<p><b>Tech Used:</b> HTML, CSS, PHP, MySQL</p>
-				<a href="https://github.com/NamalaThanusha/sports.git" target="_blank" class="project-btn">GitHub Link</a>
+				<img src="img/linkvault.png" alt="Sports Equipment">
+				<div class="project-card-content">
+					<h3>LinkVault</h3>
+					<p>Secure full stack link management platform with authentication and optimized database performance.</p>
+					<div class="project-tags">
+						<span class="project-tag">PostgreSQL</span>
+						<span class="project-tag">Express.js</span>
+						<span class="project-tag">React</span>
+						<span class="project-tag">Node.js</span>
+					</div>
+					<a href="https://github.com/NamalaThanusha/LinkVault" target="_blank" class="project-btn">View Repository →</a>
+				</div>
 			</div>
 
 			<div class="project-card">
-				<img src="img/p4.jpg" alt="Portfolio">
-				<h3>Portfolio Website</h3>
-				<p>This personal portfolio website built to showcase my skills, projects, and career journey. Fully responsive and simple design.</p>
-				<p><b>Tech Used:</b> HTML, CSS, JavaScript</p>
-				<a href="https://github.com/NamalaThanusha/portfolio.git" target="_blank" class="project-btn">GitHub Link</a>
+				<img src="img/sports.png" alt="Portfolio">
+				<div class="project-card-content">
+					<h3>Sports Equipment System</h3>
+					<p>Responsive PHP-based sports equipment booking portal developed during a national-level hackathon and awarded second prize.</p>
+					<div class="project-tags">
+						<span class="project-tag">PHP</span>
+						<span class="project-tag">MySQL</span>
+						<span class="project-tag">HTML</span>
+						<span class="project-tag">CSS</span>
+						<span class="project-tag">JavaScript</span>
+					</div>
+					<a href="https://github.com/NamalaThanusha/sports" target="_blank" class="project-btn">View Repository →</a>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<img src="img/timetable.png" alt="Automated Timetable Generator">
+				<div class="project-card-content">
+					<h3>Automated Timetable Generator</h3>
+					<p>Web application for generating and managing academic schedules through a clean and user-friendly interface.</p>
+					<div class="project-tags">
+						<span class="project-tag">Next.js</span>
+						<span class="project-tag">React</span>
+						<span class="project-tag">TypeScript</span>
+						<span class="project-tag">Tailwind CSS</span>
+					</div>
+					<a href="https://github.com/NamalaThanusha/Timetable-generator-app" target="_blank" class="project-btn">View Repository →</a>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<img src="img/csd&csit.png" alt="CSD and CSIT Website">
+				<div class="project-card-content">
+					<h3>CSD & CSIT Website</h3>
+					<p>Official customized web platform for SRKR CSD & CSIT departments with attendance management functionality.</p>
+					<div class="project-tags">
+						<span class="project-tag">PHP</span>
+						<span class="project-tag">MySQL</span>
+						<span class="project-tag">Apache</span>
+						<span class="project-tag">HTML</span>
+						<span class="project-tag">CSS</span>
+						<span class="project-tag">JavaScript</span>
+					</div>
+					<a href="https://github.com/ssantoshhhhh/department-house-points" target="_blank" class="project-btn">View Repository →</a>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<img src="img/ai.jpg" alt="AI Information Website">
+				<div class="project-card-content">
+					<h3>AI Information Website</h3>
+					<p>Responsive AI-focused informational platform with structured navigation and modern UI redesign.</p>
+					<div class="project-tags">
+						<span class="project-tag">HTML</span>
+						<span class="project-tag">CSS</span>
+						<span class="project-tag">JavaScript</span>
+					</div>
+					<a href="https://github.com/NamalaThanusha/Rangula_Mayajalam" target="_blank" class="project-btn">View Repository →</a>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Contact Section -->
 	<section id="contact" class="contact">
-		<h2>Contact Me</h2>
+		<div class="section-heading">
+			<span class="section-kicker">Contact</span>
+			<h2>Let’s build something useful</h2>
+		</div>
 		<div class="contact-container">
-			<form id="contact-form" class="contact-form">
-				<div class="form-group">
-					<label for="name">Name</label>
-					<input type="text" id="name" name="user_name" required>
+			<div class="contact-details contact-info-card">
+				<h3>Contact Information</h3>
+				<div class="contact-item">
+					<span class="contact-icon">@</span>
+					<div>
+						<span class="contact-label">Email</span>
+						<a href="mailto:namalatanusha@gmail.com">namalatanusha@gmail.com</a>
+					</div>
 				</div>
-				<div class="form-group">
-					<label for="email">Email</label>
-    				<input type="email" id="email" name="user_email" required>
-  				</div>
-  				<div class="form-group">
-    				<label for="message">Message</label>
-    				<textarea id="message" name="message" rows="5" required></textarea>
-  				</div>
-  				<button type="submit" class="submit-btn">Send Message</button>
-			</form>
-
-			<div class="contact-details">
-				<p><strong>Email:</strong> namalatanusha@gmail.com</p>
-				<div class="social-links">
+				<div class="contact-item">
+					<span class="contact-icon">P</span>
+					<div>
+						<span class="contact-label">Phone</span>
+						<a href="tel:+919347775375">9347775375</a>
+					</div>
+				</div>
+				<div class="contact-item">
+					<span class="contact-icon">L</span>
+					<div>
+						<span class="contact-label">Address</span>
+						<p>Mandapeta, Andhra Pradesh, India</p>
+					</div>
+				</div>
+				<div class="social-links contact-social-links">
 					<a href="https://www.linkedin.com/in/thanusha-namala-3a8795352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" target="_blank">
 						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="32">
 					</a>
@@ -123,6 +259,22 @@
 					</a>
 				</div>
 			</div>
+
+			<form id="contact-form" class="contact-form">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="user_name" placeholder="Your name" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="user_email" placeholder="Your email" required>
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+				</div>
+				<button type="submit" class="submit-btn">Send Message</button>
+			</form>
 		</div>
 	</section>
 
