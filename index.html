@@ -12,11 +12,6 @@
 	<header>
 		<nav class="navbar">
 			<div class="logo">Namala Thanusha</div>
-			<button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
 			<ul class="nav-links" id="nav-list">
 				<li><a href="#hero">Home</a></li>
 				<li><a href="#about">About</a></li>
@@ -24,30 +19,45 @@
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
+			<div class="nav-actions">
+				<a href="https://drive.google.com/file/d/1_B43dUXEx_bB8-dUYbZDElHEDCgqEaV6/view?usp=drivesdk" target="_blank" class="nav-resume">Resume</a>
+				<button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
 		</nav>
 	</header>
 
 	<!-- Hero Section -->
 	<section id="hero" class="hero">
-		<div class="hero-content">
-			<h1>Namala Thanusha</h1>
-			<h2>Full Stack Developer | CSIT Student</h2>
-			<p>Passionate about building scalable web applications, responsive user interfaces, and user-focused digital experiences using modern technologies.</p>
+		<div class="hero-inner">
+			<div class="hero-content">
+				<h1><span class="name-gradient">Namala Thanusha</span></h1>
+				<h2 class="role-animated"><span class="role-text">Full Stack Developer | CSIT Student</span></h2>
+				<p>Passionate about building scalable web applications, responsive user interfaces, and user-focused digital experiences using modern technologies.</p>
 
-			<div class="hero-actions">
-				<a href="#projects" class="cta-btn">View Projects</a>
-				<a href="https://drive.google.com/file/d/1_B43dUXEx_bB8-dUYbZDElHEDCgqEaV6/view?usp=drivesdk" target="_blank" class="cta-btn cta-btn-secondary">Resume</a>
-				<a href="https://github.com/NamalaThanusha" target="_blank" class="cta-btn cta-btn-secondary">GitHub</a>
-			
+				<div class="hero-actions">
+					<a href="#projects" class="cta-btn">View Projects</a>
+					<a href="https://drive.google.com/file/d/1_B43dUXEx_bB8-dUYbZDElHEDCgqEaV6/view?usp=drivesdk" target="_blank" class="cta-btn cta-btn-secondary">Resume</a>
+					<a href="https://github.com/NamalaThanusha" target="_blank" class="cta-btn cta-btn-secondary">GitHub</a>
+				</div>
+
+				<div class="social-links hero-social-links">
+					<a href="https://www.linkedin.com/in/thanusha-namala-3a8795352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" target="_blank">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+					</a>
+					<a href="https://github.com/NamalaThanusha" aria-label="GitHub" target="_blank">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+					</a>
+				</div>
 			</div>
 
-			<div class="social-links hero-social-links">
-				<a href="https://www.linkedin.com/in/thanusha-namala-3a8795352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" target="_blank">
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
-				</a>
-				<a href="https://github.com/NamalaThanusha" aria-label="GitHub" target="_blank">
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-				</a>
+			<div class="hero-portrait" aria-hidden="true">
+				<div class="portrait-frame">
+					<img src="img/profile.jpeg" alt="Profile photo of Namala Thanusha" class="hero-img" loading="eager">
+				</div>
 			</div>
 		</div>
 	</section>

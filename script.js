@@ -47,6 +47,25 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 });
 
+// Lightweight typewriter for role text (targets inner span to preserve styling)
+document.addEventListener('DOMContentLoaded', () => {
+	const roleEl = document.querySelector('.role-animated .role-text');
+	if (!roleEl) return;
+	const text = 'Full Stack Developer | CSIT Student';
+	let i = 0;
+	roleEl.textContent = '';
+	const speed = 36;
+	function type() {
+		if (i < text.length) {
+			roleEl.textContent += text.charAt(i);
+			i++;
+			setTimeout(type, speed);
+		}
+	}
+	// Slight delay to allow CSS entrance
+	setTimeout(type, 350);
+});
+
 // Update active navigation link based on scroll position
 function updateActiveNavLink() {
 	const sections = document.querySelectorAll('section[id]');
